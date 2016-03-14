@@ -1,0 +1,1 @@
+* * * * * root php /var/apps/grd-crawler/current/jobby.php >> /var/apps/grd-crawler/current/logs/jobby.log 2>&1
