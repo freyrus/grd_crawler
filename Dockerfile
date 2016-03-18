@@ -2,6 +2,8 @@ FROM freyrus/base-php5.6
 
 MAINTAINER gialac <gialacmail@gmail.com>
 
+ADD config/www.conf /etc/php5/fpm/pool.d/www.conf
+ADD config/php.ini /etc/php5/fpm/php.ini
 # install mongodb driver for php
 RUN pecl install mongo
 RUN echo "extension=mongo.so" >> /etc/php5/fpm/php.ini
